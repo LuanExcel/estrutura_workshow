@@ -22,9 +22,7 @@ def extract_from_excel(path: str) -> List[pd.DataFrame]:
     data_frame_list = []
     for file in all_files:
         data_frame_list.append(pd.read_excel(file))
-        df = pd.concat(data_frame_list)
-
-    return df
+    return data_frame_list
 
 
 
